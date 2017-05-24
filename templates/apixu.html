@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Predictions</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-moon-o"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>{{predict}}</h1>
+								<h2> Is the prediction for {{location}}. </h2>
+								<h2> </br> </h2>
+								<h1>More Information</h1>
+								<h2 align="left"> The astronomical new moon will be on: {{astronomicalNewMoon}} </h2>
+								<h2 align="left"> The moon should be visible on: {{date}} </h2>
+								<h2 align="left"> Location: {{lat}}, {{longo}} </h2>
+								<h2 align="left"> Elevation: {{elevation}} meters. </h2>
+								<h2 align="left"><span class="icon fa-cloud"></span> Expected cloud cover: {{bruh}}. </h2>
+								<h2 align="left"><span class="icon fa-low-vision"></span> Expected visibility: {{vis}} miles. </h2>
+
+    							<button onclick="goBack()">Go Back</button>
+    							<script>
+									function goBack() {
+   									 window.history.back();
+									}
+								</script>
+								
+							</div>
+						</div>
+					
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy;CSCI 499 : <a href=""></a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/skel.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="staticassets/js/main.js"></script>
+
+	</body>
+</html>
